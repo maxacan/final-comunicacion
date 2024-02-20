@@ -45,7 +45,7 @@
 </head>
 
 <body>
-
+  <!-- navbar -->
   <nav class="py-2 px-6 w-full h-20 flex justify-between items-center text-white absolute">
     <!--Logo-->
     <!-- #TODO Nombre de la compañia -->
@@ -70,20 +70,22 @@
       <div class="text-white mt-[4rem] w-2/3">
         <h1 class="font-bold text-[2rem] md:text-[2rem] lg:text-[3rem]  mb-6">
           Tu pones la idea, nosotros hacemos el resto</h1>
-        <p class="text-xl sm:text-2xl">Con bingus, cualquier persona puede llevar sus ideas hacia la realidad. Sin
+        <p class="text-xl sm:text-2xl">Con <span class="pink-gradient-text font-semibold">BINGUS</span>, cualquier
+          persona puede
+          llevar sus ideas hacia la realidad. Sin
           código, sin
           programación.
         </p>
       </div>
       <!-- Imagen del hero -->
       <!-- #TODO imagen -->
-      <img class="mr-24 hidden md:block min-w-maxplace-self-center" src="toothless-dancing.gif">
+      <img class="mr-24 hidden md:block min-w-maxplace-self-center" src="img/toothless-dancing.gif">
     </div>
   </div>
 
   <!-- Servicios -->
   <div class="w-full mt-10" id="servicios">
-    <hr class="h-px my-8 bg-gray-200 border-0">
+    <hr class="h-px my-8 mx-8 bg-gray-200 border-0">
     <h1 class="text-4xl text-center font-bold blue-gradient-text" id="nuestros-servicios">
       Conoce Nuestros Servicios</h1>
 
@@ -248,10 +250,6 @@
           class="text-white dark-blue-gradient focus:ring-4 focus:outline-none focus:ring-blue-200 :ring-blue-900 font-medium rounded-lg text-md px-5 py-2.5 inline-flex justify-center w-full text-center">Contáctanos</button>
       </div>
     </div>
-
-
-
-
   </div>
 
   <!-- Clientes -->
@@ -349,7 +347,32 @@
   </div>
 
 
+  <!-- Casos de estudio -->
+  <div class="mx-8" id="casos">
+    <hr class="h-px my-8 bg-gray-200 border-0">
+
+    <h1 class="text-4xl text-center font-bold blue-gradient-text" id="nuestros-servicios">
+      Casos De Estudio</h1>
+
+    <div class="flex flex-col md:flex-row gap 4 items-center md:items-baseline m-8" id="contenedor">
+      <a href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100   :bg-gray-700">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="img/codeninjas.png" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 "></h5>
+          <p class="mb-3 font-normal text-gray-700 ">CodeNinjas comenzó como un pequeño proyecto universitario. Gracias
+            a BINGUS, hoy en
+            día representa una de las plataformas de educación de programación más completas de Argentina.</p>
+        </div>
+      </a>
+    </div>
+
+
+
   </div>
+
+  <!-- Boton subir -->
   <button type="button"
     class="!fixed bottom-5 right-5 hidden rounded-full pink-gradient p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
     id="btn-back-to-top">
@@ -362,11 +385,12 @@
   </button>
 
 
+  <!-- Footer -->
   <footer class="blue-gradient rounded-t-lg shadow">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BINGUS</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">BINGUS</span>
         </a>
         <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
           <li>
