@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+        .blue-gradient {
+          @apply bg-gradient-to-br from-violet-600 to-indigo-600
+        }
+
+        .blue-gradient-text {
+          @apply bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent
+        }
+
+        .pink-gradient {
+          @apply bg-gradient-to-r from-pink-500 to-rose-500
+        }
+
+        .pink-gradient-text {
+          @apply bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent
+        }
+
+        .dark-blue-gradient {
+          @apply bg-gradient-to-r from-indigo-600 to-violet-600
+        }
+      }
+  </style>
+  <!-- #TODO Nombre de la compañia -->
+  <title>Programamos tu realidad | Bingus s.r.l</title>
+</head>
+
+<body>
+
+  <nav class="py-2 px-6 w-full h-20 flex absolute justify-between items-center text-white">
+    <!--Logo-->
+    <!-- #TODO Nombre de la compañia -->
+    <div class="font-bold text-3xl">
+      <a href="#hero" class="pink-gradient-text text-4xl">
+        BINGUS
+      </a>
+    </div>
+    <!--Botones-->
+    <div class="flex gap-3 content-center py-2 font-semibold text-sm items-center text-center md:gap-8 md:text-lg">
+      <a href="#servicios">Nuestros servicios</a>
+      <a href="#ejemplos">Ejemplos</a>
+      <a href="#nosotros">Acerca de nosotros</a>
+      <button class="pink-gradient text-white rounded-full px-4 py-2 gap-1">Contrátanos <i
+          class="fa-solid fa-chevron-right text-sm"></i></button>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <div id="hero" class="blue-gradient h-[34rem] p-2 rounded-br-[20rem] shadow">
+    <div class="mt-14 w-full p-2 px-8 flex gap-16">
+      <!-- Texto del hero -->
+      <div class="text-white mt-[4rem] w-2/3">
+        <h1 class="font-bold text-[3rem]  mb-6">
+          Tu pones la idea, nosotros hacemos el resto</h1>
+        <!-- #TODO texto del hero -->
+        <p class="text-2xl">Con bingus, cualquier persona puede llevar sus ideas hacia la realidad. Sin código, sin
+          programación.
+        </p>
+      </div>
+      <!-- Imagen del hero -->
+      <div class="mr-24 min-w-max">
+        <!-- #TODO imagen -->
+        <img src="https://i.imgflip.com/5clvxe.png">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-full h-[30rem] mt-10" id="servicios">
+    <h1 class="text-4xl text-center font-semibold text-indigo-700" id="nuestros-servicios">
+      Conoce Nuestros Servicios</h1>
+
+    <div class="flex w-full px-20 gap-8 pt-10 mb-16" id="tarjetas">
+
+
+      <!-- Estandard -->
+      <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
+        <h5 class="mb-4 text-xl font-medium text-gray-500">Plan estándar</h5>
+        <div class="flex items-baseline text-gray-900 dark:text-white">
+          <span class="text-3xl font-semibold text-gray-600">$</span>
+          <span class="text-5xl font-extrabold tracking-tight blue-gradient-text">89</span>
+          <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">usd/mes</span>
+        </div>
+        <p class="mt-3 text-gray-600">Perfecto para empresas en crecimiento que buscan una solución de software más
+          completa.</p>
+
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex items-center">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500  ms-3">Diseño de HTML, CSS y
+              JavaScript</span>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500  ms-3">Interfaz para administradores</span>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500  ms-3">Soporte por correo electrónico</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Base de datos</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Acceso a la API</span>
+          </li>
+          <li class="flex line-through decoration-gray-500">
+            <i class="fa-solid fa-square-check text-gray-500"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Mantenimiento
+              continuo</span>
+          </li>
+          <li class="flex line-through decoration-gray-500">
+            <i class="fa-solid fa-square-check text-gray-500"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Documentación completa</span>
+          </li>
+          <li class="flex line-through decoration-gray-500">
+            <i class="fa-solid fa-square-check text-gray-500"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Soporte técnico prioritario 24/7</span>
+          </li>
+        </ul>
+        <button type="button"
+          class="text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark-blue-gradient font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Elegir
+          plan</button>
+      </div>
+
+      <!-- Premium -->
+      <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
+        <h5 class="mb-4 text-xl font-medium text-gray-500">Plan premium</h5>
+        <div class="flex items-baseline text-gray-900 dark:text-white">
+          <span class="text-3xl font-semibold text-gray-600">$</span>
+          <span class="text-5xl font-extrabold tracking-tight blue-gradient-text">149</span>
+          <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">usd/mes</span>
+        </div>
+        <p class="mt-3 text-gray-600">Para empresas que requieren una solución de software altamente personalizada y
+          escalable.</p>
+
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex items-center">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500  ms-3">Diseño de HTML, CSS y
+              JavaScript</span>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500  ms-3">Interfaz para administradores</span>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500  ms-3">Soporte por correo / teléfono</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Base de datos</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Acceso a la API</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Mantenimiento
+              continuo</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Documentación completa</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Soporte técnico prioritario 24/7</span>
+          </li>
+        </ul>
+        <button type="button"
+          class="text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark-blue-gradient rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Elegir
+          plan</button>
+      </div>
+
+      <!-- Personalizado -->
+      <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
+        <h5 class="mb-4 text-xl font-medium text-gray-500">Plan personalizado</h5>
+        <div class="flex items-baseline text-gray-900 dark:text-white">
+          <span class="text-3xl font-semibold text-gray-600">$</span>
+          <span class="text-5xl font-extrabold tracking-tight blue-gradient-text">--</span>
+          <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">usd/mes (contáctanos)</span>
+        </div>
+        <p class="mt-3 text-gray-600">Para empresas con necesidades específicas que no se ajustan a los planes
+          estándar ni premium.
+        </p>
+
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex items-center">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500  ms-3">Diseño de HTML, CSS y
+              JavaScript</span>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500  ms-3">Interfaz a medida</span>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500  ms-3">Soporte directo en nuestro
+              portal</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Base de datos personalizada</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Acceso a la API</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Mantenimiento
+              personalizado</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Documentación personalizada</span>
+          </li>
+          <li class="flex decoration-gray-500">
+            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Soporte técnico personalizado</span>
+          </li>
+        </ul>
+        <button type="button"
+          class="text-white dark-blue-gradient focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Contáctanos</button>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  </div>
+
+
+</body>
+
+<!-- <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">About</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"
+        class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+  </div>
+</footer> -->
+
+</html>

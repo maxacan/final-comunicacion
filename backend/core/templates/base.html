@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'src/output.css'%}">
+  <title>{% block titulo %}Programamos tu realidad{% endblock titulo %} | empresa s.r.l</title>
+  {% comment %} #TODO: Cambiar nombre de la empresa{% endcomment %}
+</head>
+<body>
+  {% block navbar %}
+  {% include "core/_navbar.html" %}
+  {% endblock navbar %}
+  <div class="pt-20">
+  {% block contenido %}
+  
+  {% endblock contenido %}
+  </div>
+</body>
+</html>
