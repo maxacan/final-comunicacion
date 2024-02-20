@@ -68,30 +68,31 @@
     <div class="mt-14 w-full p-2 px-8 flex gap-16 item-center">
       <!-- Texto del hero -->
       <div class="text-white mt-[4rem] w-2/3">
-        <h1 class="font-bold text-[3rem]  mb-6">
+        <h1 class="font-bold text-[2rem] md:text-[2rem] lg:text-[3rem]  mb-6">
           Tu pones la idea, nosotros hacemos el resto</h1>
-        <!-- #TODO texto del hero -->
-        <p class="text-2xl">Con bingus, cualquier persona puede llevar sus ideas hacia la realidad. Sin código, sin
+        <p class="text-xl sm:text-2xl">Con bingus, cualquier persona puede llevar sus ideas hacia la realidad. Sin
+          código, sin
           programación.
         </p>
       </div>
       <!-- Imagen del hero -->
       <!-- #TODO imagen -->
-      <img class="mr-24 min-w-maxplace-self-center" src="toothless-dancing.gif">
+      <img class="mr-24 hidden md:block min-w-maxplace-self-center" src="toothless-dancing.gif">
     </div>
   </div>
 
   <!-- Servicios -->
   <div class="w-full mt-10" id="servicios">
     <hr class="h-px my-8 bg-gray-200 border-0">
-    <h1 class="text-4xl text-center font-semibold blue-gradient-text" id="nuestros-servicios">
+    <h1 class="text-4xl text-center font-bold blue-gradient-text" id="nuestros-servicios">
       Conoce Nuestros Servicios</h1>
 
-    <div class="flex w-full px-20 gap-8 pt-10 mb-16" id="tarjetas">
+    <div class="flex flex-col lg:flex-row w-full px-10 lg:px-20 gap-8 pt-10 mb-16 items-center lg:items-baseline"
+      id="tarjetas">
 
 
       <!-- Estandard -->
-      <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
+      <div class="w-full max-w-lg lg:max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
         <h5 class="mb-4 text-xl font-medium text-gray-500">Plan estándar</h5>
         <div class="flex items-baseline text-gray-900 ">
           <span class="text-3xl font-semibold text-gray-600">$</span>
@@ -102,48 +103,48 @@
           completa.</p>
 
         <ul role="list" class="space-y-5 my-7">
-          <li class="flex items-center">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500  ms-3">Diseño de HTML, CSS y
               JavaScript</span>
           </li>
-          <li class="flex">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500  ms-3">Interfaz para administradores</span>
           </li>
-          <li class="flex">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500  ms-3">Soporte por correo electrónico</span>
           </li>
-          <li class="flex decoration-gray-500">
-            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+          <li class="flex decoration-gray-500 line-through items-baseline">
+            <i class="fa-solid fa-square-check text-gray-500"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Base de datos</span>
           </li>
-          <li class="flex decoration-gray-500">
-            <i class="fa-solid fa-square-check blue-gradient-text"></i>
+          <li class="flex decoration-gray-500 line-through items-baseline">
+            <i class="fa-solid fa-square-check text-gray-500"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Acceso a la API</span>
           </li>
-          <li class="flex line-through decoration-gray-500">
+          <li class="flex line-through decoration-gray-500 items-baseline">
             <i class="fa-solid fa-square-check text-gray-500"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Mantenimiento
               continuo</span>
           </li>
-          <li class="flex line-through decoration-gray-500">
+          <li class="flex line-through decoration-gray-500 items-baseline">
             <i class="fa-solid fa-square-check text-gray-500"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Documentación completa</span>
           </li>
-          <li class="flex line-through decoration-gray-500">
+          <li class="flex line-through decoration-gray-500 items-baseline">
             <i class="fa-solid fa-square-check text-gray-500"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Soporte técnico prioritario 24/7</span>
           </li>
         </ul>
         <button type="button"
-          class="text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark-blue-gradient font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Elegir
+          class="text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark-blue-gradient font-medium rounded-lg text-md px-5 py-2.5 inline-flex justify-center w-full text-center">Elegir
           plan</button>
       </div>
 
       <!-- Premium -->
-      <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
+      <div class="w-full max-w-lg lg:max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
         <h5 class="mb-4 text-xl font-medium text-gray-500">Plan premium</h5>
         <div class="flex items-baseline text-gray-900 ">
           <span class="text-3xl font-semibold text-gray-600">$</span>
@@ -154,97 +155,97 @@
           escalable.</p>
 
         <ul role="list" class="space-y-5 my-7">
-          <li class="flex items-center">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500  ms-3">Diseño de HTML, CSS y
               JavaScript</span>
           </li>
-          <li class="flex">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500  ms-3">Interfaz para administradores</span>
           </li>
-          <li class="flex">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500  ms-3">Soporte por correo / teléfono</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Base de datos</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Acceso a la API</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Mantenimiento
               continuo</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Documentación completa</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Soporte técnico prioritario 24/7</span>
           </li>
         </ul>
         <button type="button"
-          class="text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark-blue-gradient rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Elegir
+          class="text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark-blue-gradient rounded-lg text-md px-5 py-2.5 inline-flex justify-center w-full text-center">Elegir
           plan</button>
       </div>
 
       <!-- Personalizado -->
-      <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
+      <div class="w-full max-w-lg lg:max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
         <h5 class="mb-4 text-xl font-medium text-gray-500">Plan personalizado</h5>
         <div class="flex items-baseline text-gray-900 ">
           <span class="text-3xl font-semibold text-gray-600">$</span>
-          <span class="text-5xl font-extrabold tracking-tight blue-gradient-text">--</span>
-          <span class="ms-1 text-xl font-normal text-gray-500 ">usd/mes (contáctanos)</span>
+          <span class="ms-1 text-lg xl:text-2xl lg:mb-4 font-normal text-gray-500 ">usd/mes
+            (contáctanos)</span>
         </div>
         <p class="mt-3 text-gray-600">Para empresas con necesidades específicas que no se ajustan a los planes
           estándar ni premium.
         </p>
 
         <ul role="list" class="space-y-5 my-7">
-          <li class="flex items-center">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500  ms-3">Diseño de HTML, CSS y
               JavaScript</span>
           </li>
-          <li class="flex">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500  ms-3">Interfaz a medida</span>
           </li>
-          <li class="flex">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500  ms-3">Soporte directo en nuestro
               portal</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Base de datos personalizada</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Acceso a la API</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Mantenimiento
               personalizado</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Documentación personalizada</span>
           </li>
-          <li class="flex decoration-gray-500">
+          <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
             <span class="text-base font-normal leading-tight text-gray-500 ms-3">Soporte técnico personalizado</span>
           </li>
         </ul>
         <button type="button"
-          class="text-white dark-blue-gradient focus:ring-4 focus:outline-none focus:ring-blue-200 :ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Contáctanos</button>
+          class="text-white dark-blue-gradient focus:ring-4 focus:outline-none focus:ring-blue-200 :ring-blue-900 font-medium rounded-lg text-md px-5 py-2.5 inline-flex justify-center w-full text-center">Contáctanos</button>
       </div>
     </div>
 
@@ -253,7 +254,6 @@
 
   </div>
 
-  <!-- #TODO responsivo -->
   <!-- Clientes -->
 
   <div class="mx-8" id="clientes">
@@ -267,7 +267,7 @@
       <figure
         class="flex flex-col items-center justify-center p-8 text-center bg-white border-b rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e ">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
-          <h3 class="text-xl font-bold pink-gradient-text ">Súper sencillo de implementar</h3>
+          <h3 class="text-xl font-bold pink-gradient-text italic">"Súper sencillo de implementar"</h3>
           <p class="my-4">Contratamos el plan premium para desarrollar nuestra aplicación web
             y estamos extremadamente
             satisfechos con los resultados. El equipo fue profesional, receptivo y entregó un
@@ -287,7 +287,7 @@
       <figure
         class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg  ">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 ">
-          <h3 class="text-lg font-bold pink-gradient-text ">Un fundamento sólido para cualquier proyecto</h3>
+          <h3 class="text-lg font-bold pink-gradient-text italic">"Un fundamento sólido para cualquier proyecto"</h3>
           <p class="my-4">Optamos por el plan estándar para el desarrollo de nuestra plataforma digital y no podríamos
             estar más contentos. Desde el diseño de la interfaz de usuario hasta la implementación de nuevas
             funcionalidades, el
@@ -307,7 +307,7 @@
       <figure
         class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e  ">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 ">
-          <h3 class="text-lg font-bold pink-gradient-text ">Te proporciona un workflow increíble</h3>
+          <h3 class="text-lg font-bold pink-gradient-text italic">"Te proporcionan un workflow increíble"</h3>
           <p class="my-4">Elegimos el plan más económico para desarrollar una aplicación web interna
             y estamos muy contentos
             con el resultado. A pesar de ser un proyecto más pequeño, el equipo nos trató con
@@ -329,7 +329,7 @@
       <figure
         class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg  ">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 ">
-          <h3 class="text-lg font-bold pink-gradient-text ">Como tener un equipo de desarrollo propio</h3>
+          <h3 class="text-lg font-bold pink-gradient-text italic">"Como tener un equipo de desarrollo propio"</h3>
           <p class="my-4">Decidimos trabajar en un proyecto personalizado y no podríamos estar más impresionados. Su
             enfoque centrado en el cliente y su capacidad para adaptarse a nuestras necesidades específicas fueron
             excepcionales.
