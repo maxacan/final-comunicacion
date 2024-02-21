@@ -41,7 +41,7 @@
       }
   </style>
   <!-- #TODO Nombre de la compañia -->
-  <title>Programamos tu realidad | Bingus s.r.l</title>
+  <title>Programamos tu realidad | CODEARGENT s.r.l</title>
 </head>
 
 <body>
@@ -50,28 +50,62 @@
     <!--Logo-->
     <!-- #TODO Nombre de la compañia -->
     <div class="font-bold text-3xl">
-      <a href="#hero" class="pink-gradient-text text-4xl">
-        BINGUS
+      <a href="#hero" class="pink-gradient-text text-4xl uppercase">
+        codeargent
       </a>
     </div>
     <!--Botones-->
     <div class="flex gap-3 content-center py-2 font-semibold text-sm items-center text-center md:gap-8 md:text-lg">
-      <a href="#opiniones">Opiniones</a>
-      <a href="#proyectos">Nuestros proyectos</a>
-      <button class="pink-gradient text-white rounded-full px-4 py-2 gap-1"
-        onClick="document.getElementById('nuestros-servicios').scrollIntoView({behavior: 'smooth'});">Contrátanos <i
-          class="fa-solid fa-chevron-right text-sm"></i></button>
+      <a class="hidden md:block" href="#opiniones">Opiniones</a>
+
+      <a class="hidden md:block" href="#proyectos">Nuestros proyectos</a>
+
+      <button class="pink-gradient text-white rounded-full px-4 py-2 gap-1 hidden md:block"
+        onClick="document.getElementById('nuestros-servicios').scrollIntoView({behavior: 'smooth'});">Contrátanos</button>
+
+    </div>
+
+    <!-- Menu navegacion -->
+    <div class="md:hidden">
+      <button type="button" id="boton-menu"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-3xl text-white hover:pink-gradient-text md:hidden ">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div
+        class="hidden absolute top-20 left-4 right-4 p-1 rounded-lg border-2 border-gray-300 shadow bg-white text-gray-600 text-xl"
+        id="menu-navegacion">
+
+        <ul>
+          <li class="w-full">
+            <a class="block px-2 py-2 font-bold rounded-md hover:pink-gradient hover:text-white"
+              href="#nuestros-servicios">Nuestros servicios</a>
+          </li>
+          <li class="w-full">
+            <a class="block px-2 py-2 font-bold rounded-md hover:pink-gradient hover:text-white"
+              href="#opiniones">Opiniones</a>
+          </li>
+          <li class="w-full">
+            <a class="block px-2 py-2 font-bold rounded-md hover:pink-gradient hover:text-white"
+              href="#proyectos">Nuestros
+              proyectos</a>
+          </li>
+
+        </ul>
+
+      </div>
+
     </div>
   </nav>
 
   <!-- hero -->
   <div id="hero" class="blue-gradient h-[34rem] p-2 rounded-br-[20rem] shadow">
-    <div class="mt-14 w-full p-2 px-8 flex gap-16 item-center">
+    <div class="mt-14 w-full p-2 px-8 flex item-center">
       <!-- Texto del hero -->
-      <div class="text-white mt-[4rem] w-2/3">
-        <h1 class="font-bold text-[2rem] md:text-[2rem] lg:text-[3rem]  mb-6">
+      <div class="text-white mt-[2rem] md:mt-[4rem] w-2/3">
+        <h1 class="font-bold text-[2rem] md:text-[2rem] lg:text-[3rem] mb-6">
           Tu pones la idea, nosotros hacemos el resto</h1>
-        <p class="text-xl sm:text-2xl">Con <span class="pink-gradient-text font-semibold capitalize">bingus</span>,
+        <p class="text-xl sm:text-2xl">Con <span class="pink-gradient-text font-semibold capitalize">codeargent</span>,
           cualquier
           persona puede
           llevar sus ideas hacia la realidad. Sin
@@ -81,7 +115,7 @@
       </div>
       <!-- Imagen del hero -->
       <!-- #TODO imagen -->
-      <img class="mr-24 hidden md:block min-w-maxplace-self-center" src="img/toothless-dancing.gif">
+      <img class="hidden md:block w-full ml-[-3.5rem]" src="img/imagenhero.svg">
     </div>
   </div>
 
@@ -90,7 +124,7 @@
     <hr class="h-px my-8 mx-8 bg-gray-200 border-0">
     <h1 class="text-4xl text-center font-bold blue-gradient-text" id="nuestros-servicios">
       Conoce Nuestros Servicios</h1>
-    <p class="mx-auto max-w-lg text-center my-4 text-lg text-gray-600 ">
+    <p class="mx-auto max-w-sm md:max-w-lg text-center my-4 text-lg text-gray-600 ">
       Desde sitios web estáticos hasta sistemas ERP completos, ofrecemos soluciones enfocadas en el cliente.
     </p>
 
@@ -356,7 +390,7 @@
     <h1 class="text-4xl text-center font-bold blue-gradient-text" id="nuestros-servicios">
       Algunos De Nuestros Proyectos</h1>
     <p class="mx-auto max-w-lg text-center mb-4 text-lg text-gray-600 my-4">
-      En <span class="pink-gradient-text font-semibold capitalize">bingus</span>, estamos orgullosos de nuestro
+      En <span class="pink-gradient-text font-semibold capitalize">codeargent</span>, estamos orgullosos de nuestro
       trabajo. El éxito
       de nuestros
       clientes es nuestro éxito, por lo que te
@@ -375,7 +409,7 @@
           <p class="mb-3 font-normal text-gray-700 "><span class="font-bold">CodeNinjas</span> comenzó como un pequeño
             proyecto universitario.
             Gracias
-            a <span class="pink-gradient-text font-semibold capitalize">bingus</span>, hoy en
+            a <span class="pink-gradient-text font-semibold capitalize">codeargent</span>, hoy en
             día representa una de las plataformas de educación de programación más completas de Argentina.</p>
         </div>
       </a>
@@ -389,7 +423,8 @@
           <p class="mb-3 font-normal text-gray-700 ">En 2006, Prieto Rossi abrió <span class="font-bold">La
               Famiglia</span>, un pequeño restaurante de
             comida
-            italiana. 15 años después, <span class="pink-gradient-text font-semibold capitalize">bingus</span> diseña
+            italiana. 15 años después, <span class="pink-gradient-text font-semibold capitalize">codeargent</span>
+            diseña
             un sistema
             escalable y
             capaz de controlar el flujo de
@@ -403,9 +438,11 @@
           src="img/reshirt.png" alt="">
         <div class="flex flex-col justify-between p-4 leading-normal">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Remeras éticas</h5>
-          <p class="mb-3 font-normal text-gray-700 "><span class="font-bold">re.SHIRT</span> fabrica prendas de vestir
+          <p class="mb-3 font-normal text-gray-700 "><span class="font-bold">re.SHIRT</span> comercializa prendas de
+            vestir
             fabricadas con materiales de
-            origen ético. <span class="pink-gradient-text font-semibold capitalize">bingus</span> soporta su página de
+            origen ético. <span class="pink-gradient-text font-semibold capitalize">codeargent</span> soporta su página
+            de
             e-commerce
             internacional.</p>
         </div>
@@ -418,7 +455,7 @@
         <div class="flex flex-col justify-between p-4 leading-normal">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Cocina como en casa, para llevar</h5>
           <p class="mb-3 font-normal text-gray-700 "><span
-              class="pink-gradient-text font-semibold capitalize">bingus</span>, ayuda
+              class="pink-gradient-text font-semibold capitalize">codeargent</span>, ayuda
             a <span class="font-bold">Nuuddle</span>, un pequeño
             restaurante que pretende llevar
             el sabor casero a la comida rápida, a ofrecer servicios de pedidos y envíos por internet.</p>
@@ -451,7 +488,7 @@
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-white"><span
-              class="pink-gradient-text">BINGUS</span></span>
+              class="pink-gradient-text uppercase">codeargent</span></span>
         </a>
         <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
           <li>
@@ -467,7 +504,7 @@
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       <span class="block text-sm text-white sm:text-center">© 2024
-        BINGUS. Todos los derechos reservados.</span>
+        Codeargent S.R.L. Todos los derechos reservados.</span>
     </div>
   </footer>
 
@@ -475,28 +512,7 @@
 
 </body>
 
-<script>
-  const mybutton = document.getElementById("btn-back-to-top");
-
-
-  const scrollFunction = () => {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      mybutton.classList.remove("hidden");
-    } else {
-      mybutton.classList.add("hidden");
-    }
-  };
-  const backToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  // When the user clicks on the button, scroll to the top of the document
-  mybutton.addEventListener("click", backToTop);
-
-  window.addEventListener("scroll", scrollFunction);
-</script>
+<script src="index.js"></script>
+<script src="scroll.js"></script>
 
 </html>
