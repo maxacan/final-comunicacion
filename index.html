@@ -19,31 +19,26 @@
   </script>
   <style type="text/tailwindcss">
     @layer utilities {
-        .blue-gradient {
-          @apply bg-gradient-to-br from-violet-600 to-indigo-600
-        }
-
-        .blue-gradient-text {
-          @apply bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent
-        }
-
-        .pink-gradient {
-          @apply bg-gradient-to-r from-pink-500 to-rose-500
-        }
-
-        .pink-gradient-text {
-          @apply bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent
-        }
-
-        .dark-blue-gradient {
-          @apply bg-gradient-to-r from-indigo-600 to-violet-600
-        }
-
-        .tipografia {
-          @apply pink-gradient-text font-semibold capitalize
-        }
+      .blue-gradient {
+      @apply bg-gradient-to-br from-violet-600 to-indigo-600
       }
-  </style>
+      .blue-gradient-text {
+      @apply bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent
+      }
+      .pink-gradient {
+      @apply bg-gradient-to-r from-pink-500 to-rose-500
+      }
+      .pink-gradient-text {
+      @apply bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent
+      }
+      .dark-blue-gradient {
+      @apply bg-gradient-to-r from-indigo-600 to-violet-600
+      }
+      .tipografia {
+      @apply pink-gradient-text font-semibold capitalize
+      }
+      }
+    </style>
   <title>Programamos tu realidad | CODEARGENT s.r.l</title>
 </head>
 
@@ -59,25 +54,19 @@
     <!--Botones-->
     <div class="flex gap-3 content-center py-2 font-semibold text-sm items-center text-center md:gap-8 md:text-lg">
       <a class="hidden md:block" href="#opiniones">Opiniones</a>
-
       <a class="hidden md:block" href="#proyectos">Nuestros proyectos</a>
-
       <button class="pink-gradient text-white rounded-full px-4 py-2 gap-1 hidden md:block"
         onClick="document.getElementById('nuestros-servicios').scrollIntoView({behavior: 'smooth'});">Contrátanos</button>
-
     </div>
-
     <!-- Menu navegacion -->
     <div class="md:hidden">
       <button type="button" id="boton-menu"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-3xl text-white hover:pink-gradient-text md:hidden ">
         <i class="fa-solid fa-bars"></i>
       </button>
-
       <div
         class="hidden absolute top-20 left-4 right-4 p-1 rounded-lg border-2 border-gray-300 shadow text-gray-600 bg-white text-xl"
         id="menu-navegacion">
-
         <ul>
           <li class="w-full">
             <a class="block px-2 py-2 font-bold rounded-md hover:pink-gradient hover:text-white"
@@ -92,21 +81,18 @@
               href="#proyectos">Nuestros
               proyectos</a>
           </li>
-
         </ul>
-
       </div>
-
     </div>
   </nav>
-
   <!-- hero -->
   <div id="hero" class="blue-gradient h-[28rem] md:h-[34rem] p-2 rounded-br-[16rem] md:rounded-br-[20rem] shadow">
     <div class="mt-14 w-full p-2 px-4 md:px-8 flex item-center">
       <!-- Texto del hero -->
       <div class="text-white mt-[2rem] sm:mt-[4rem] sm:w-2/3">
         <h1 class="font-bold text-[2rem] md:text-[2rem] lg:text-[3rem] mb-2 md:mb-6">
-          Tú das la idea, nosotros hacemos el resto</h1>
+          Tú das la idea, nosotros hacemos el resto
+        </h1>
         <p class="text-lg mr-8 md:mr-auto sm:text-2xl">Con <span class="tipografia">codeargent</span>,
           cualquier
           persona puede
@@ -119,20 +105,17 @@
       <img class="hidden md:block w-full ml-[-3.5rem] max-w-4xl" src="img/imagenhero.svg">
     </div>
   </div>
-
   <!-- Servicios -->
   <div class="w-full mt-10" id="servicios">
     <hr class="h-px my-8 mx-8 bg-gray-200 border-0">
     <h1 class="text-4xl text-center font-bold blue-gradient-text" id="nuestros-servicios">
-      Conoce Nuestros Servicios</h1>
+      Conoce Nuestros Servicios
+    </h1>
     <p class="mx-auto max-w-sm md:max-w-lg text-center my-4 text-lg text-gray-600 ">
       Desde sitios web estáticos hasta sistemas ERP completos, ofrecemos soluciones enfocadas en el cliente.
     </p>
-
     <div class="flex flex-col lg:flex-row w-full px-10 lg:px-20 gap-8 pt-10 mb-16 items-center lg:items-baseline"
       id="tarjetas">
-
-
       <!-- Estandard -->
       <div class="w-full max-w-lg lg:max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
         <h5 class="mb-4 text-xl font-medium text-gray-500">Plan estándar</h5>
@@ -142,8 +125,8 @@
           <span class="ms-1 text-xl font-normal text-gray-500 ">usd/mes</span>
         </div>
         <p class="mt-3 text-gray-600">Perfecto para empresas en crecimiento que buscan una solución de software
-          sencilla, pero elegante.</p>
-
+          sencilla, pero elegante.
+        </p>
         <ul role="list" class="space-y-5 my-7">
           <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
@@ -183,7 +166,6 @@
           class="text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark-blue-gradient font-medium rounded-lg text-md px-5 py-2.5 inline-flex justify-center w-full text-center">Elegir
           plan</button>
       </div>
-
       <!-- Premium -->
       <div class="w-full max-w-lg lg:max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
         <h5 class="mb-4 text-xl font-medium text-gray-500">Plan premium</h5>
@@ -193,8 +175,8 @@
           <span class="ms-1 text-xl font-normal text-gray-500 ">usd/mes</span>
         </div>
         <p class="mt-3 text-gray-600">Para empresas que requieren una solución de software altamente personalizada y
-          escalable.</p>
-
+          escalable.
+        </p>
         <ul role="list" class="space-y-5 my-7">
           <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
@@ -234,7 +216,6 @@
           class="text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark-blue-gradient rounded-lg text-md px-5 py-2.5 inline-flex justify-center w-full text-center">Elegir
           plan</button>
       </div>
-
       <!-- Personalizado -->
       <div class="w-full max-w-lg lg:max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
         <h5 class="mb-4 text-xl font-medium text-gray-500">Plan personalizado</h5>
@@ -245,7 +226,6 @@
         <p class="mt-3 text-gray-600">Para empresas con necesidades específicas que no se ajustan a los planes
           estándar ni premium.
         </p>
-
         <ul role="list" class="space-y-5 my-7">
           <li class="flex items-baseline">
             <i class="fa-solid fa-square-check blue-gradient-text"></i>
@@ -287,19 +267,15 @@
       </div>
     </div>
   </div>
-
-
   <!-- Clientes -->
-
   <div class="mx-8" id="clientes">
     <hr class="h-px my-8 bg-gray-200 border-0">
-
     <h1 class="mt-8 text-4xl text-center font-bold blue-gradient-text" id="opiniones">
-      Opiniones De Nuestros Clientes</h1>
+      Opiniones De Nuestros Clientes
+    </h1>
     <p class="mx-auto max-w-lg text-center my-4 text-lg text-gray-600 ">
       Conoce las opiniones de algunos clientes recientes.
     </p>
-
     <div class="grid mb-8 border border-gray-200 rounded-lg shadow md:mb-12 md:grid-cols-2 mt-10">
       <figure
         class="flex flex-col items-center justify-center p-8 text-center bg-white border-b rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e ">
@@ -309,7 +285,8 @@
             y estamos extremadamente
             satisfechos con los resultados. El equipo fue profesional, receptivo y entregó un
             producto
-            final que superó nuestras expectativas. ¡Recomendaríamos sus servicios a cualquiera!</p>
+            final que superó nuestras expectativas. ¡Recomendaríamos sus servicios a cualquiera!
+          </p>
         </blockquote>
         <figcaption class="flex items-center justify-center ">
           <img class="rounded-full w-9 h-9"
@@ -320,7 +297,6 @@
           </div>
         </figcaption>
       </figure>
-
       <figure
         class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg  ">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 ">
@@ -329,7 +305,8 @@
             estar más contentos. Desde el diseño de la interfaz de usuario hasta la implementación de nuevas
             funcionalidades, el
             equipo demostró un alto nivel de habilidad y compromiso. ¡Gracias por hacer que nuestro
-            proyecto sea un éxito!</p>
+            proyecto sea un éxito!
+          </p>
         </blockquote>
         <figcaption class="flex items-center justify-center ">
           <img class="rounded-full w-9 h-9"
@@ -340,7 +317,6 @@
           </div>
         </figcaption>
       </figure>
-
       <figure
         class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e  ">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 ">
@@ -351,7 +327,8 @@
             la misma
             atención y profesionalismo que a sus proyectos más grandes. ¡Definitivamente los recomendamos por su calidad
             y servicio
-            al cliente excepcionales!</p>
+            al cliente excepcionales!
+          </p>
         </blockquote>
         <figcaption class="flex items-center justify-center ">
           <img class="rounded-full w-9 h-9"
@@ -362,7 +339,6 @@
           </div>
         </figcaption>
       </figure>
-
       <figure
         class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg  ">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 ">
@@ -370,7 +346,8 @@
           <p class="my-4">Decidimos trabajar en un proyecto personalizado y no podríamos estar más impresionados. Su
             enfoque centrado en el cliente y su capacidad para adaptarse a nuestras necesidades específicas fueron
             excepcionales.
-            ¡Definitivamente los consideraremos para futuros proyectos!</p>
+            ¡Definitivamente los consideraremos para futuros proyectos!
+          </p>
         </blockquote>
         <figcaption class="flex items-center justify-center ">
           <img class="rounded-full w-9 h-9"
@@ -382,10 +359,7 @@
         </figcaption>
       </figure>
     </div>
-
   </div>
-
-
   <!-- CEO -->
   <dialog id="modal_ceo" class="w-screen h-screen border rounded-lg shadow p-8">
     <div>
@@ -395,10 +369,9 @@
       <h1 class="font-bold text-4xl pink-gradient-text py-1">CODEARGENT, por el futuro tecnológico argentino.</h1>
       <p class="py-4 font-semibold text-lg max-w-2xl">Nuestro CEO cuenta cómo <span class="tipografia">codeargent</span>
         no sólo trabaja desarrollando software,
-        sino también trabaja para desarrollar la industria del software nacional.</p>
-
+        sino también trabaja para desarrollar la industria del software nacional.
+      </p>
       <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-8 text-justify">
-
         <div class="md:col-start-1 md:col-end-2">
           <p class="mb-4 ">
             En <span class="tipografia">codeargent</span>, entendemos que el verdadero
@@ -410,10 +383,9 @@
             tecnológico en
             Argentina.
           </p>
-
           <h3 class="my-4 text-2xl font-semibold  italic">¿Cómo contribuímos a esta visión y promovemos la creación de
-            empleo en la industria del conocimiento?</h3>
-
+            empleo en la industria del conocimiento?
+          </h3>
           <p class="my-4 italic font-semibold text-gray-600">"No solo ofrecemos soluciones tecnológicas avanzadas, sino
             que también apostamos por el talento local. Al contratar y
             capacitar a profesionales argentinos altamente calificados, contribuimos al crecimiento del sector y
@@ -422,24 +394,22 @@
             grandes
             corporaciones, estamos impactando positivamente en distintos segmentos de la economía."
           </p>
-
           <p class="my-4 ">Estamos convenicidos que la Argentina tiene un potencial inmenso en el ámbito del desarrollo
             de software y la inteligencia artificial. La
             inversión en estas áreas no solo impulsará la economía, sino que también permitirá a las empresas argentinas
             competir a
             nivel global, generando empleo y posicionando al país como un referente en el campo del conocimiento y la
-            tecnología.</p>
+            tecnología.
+          </p>
         </div>
-
         <div class="md:col-start-2 md:col-end-3">
           <!-- TODO imagen de codeninjas -->
           <img
             src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
             alt="" class="mb-4">
-
           <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo ves el papel de la tecnología y la inteligencia
-            artificial en la generación de trabajo en Argentina</h3>
-
+            artificial en la generación de trabajo en Argentina
+          </h3>
           <p class="my-4 italic font-semibold text-gray-600">"La tecnología y la inteligencia artificial son motores
             fundamentales para la generación de empleo en Argentina y en todo
             el mundo. Al invertir en la industria del conocimiento, podemos crear oportunidades laborales en el
@@ -459,11 +429,12 @@
             tecnológica
             para comunidades desfavorecidas y apoyamos proyectos que buscan cerrar la brecha digital. Creemos firmemente
             que el
-            éxito de una empresa está intrínsecamente ligado al bienestar de la sociedad en la que opera.</p>
-
+            éxito de una empresa está intrínsecamente ligado al bienestar de la sociedad en la que opera.
+          </p>
           <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo ves el futuro de la industria del conocimiento
             en Argentina y cuál crees que debería ser el enfoque para maximizar su
-            impacto en la generación de empleo?</h3>
+            impacto en la generación de empleo?
+          </h3>
           <p class="my-4 italic font-semibold text-gray-600">"El futuro de la industria del conocimiento en Argentina es
             prometedor. Es esencial seguir invirtiendo en educación,
             formación técnica y en la creación de políticas que fomenten la innovación y el emprendimiento. Además, la
@@ -481,19 +452,19 @@
             estratégica en la industria del conocimiento allana el camino hacia un futuro próspero y sostenible para
             nuestro país.
           </p>
-
         </div>
       </div>
     </div>
   </dialog>
-
+  <!-- Jumbotron CEO -->
   <div class="" id="ceo">
     <!-- TODO imagen jumbotron -->
     <section
       class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
       <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-          Invertimos en el potencial argentino</h1>
+          Invertimos en el potencial argentino
+        </h1>
         <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">No solo ofrecemos servicios de
           desarrollo, también estamos comprometidos en impulsar
           la
@@ -507,21 +478,16 @@
         </div>
       </div>
     </section>
-
-
   </div>
-
   <!-- Casos de estudio -->
   <div class="m-8" id="proyectos">
-
     <h1 class="text-4xl text-center font-bold blue-gradient-text" id="proyectos">
-      Desarrollo Hacia El Futuro</h1>
+      Desarrollo Hacia El Futuro
+    </h1>
     <p class="mx-auto max-w-lg text-center mb-4 text-lg text-gray-600 my-4">
       Nos dedicamos a crear un impacto perdurable, marcando la diferencia con cada paso que damos. Conoce las historias
       que han dado forma a quienes somos hoy en día.
     </p>
-
-
     <!-- Modal codeninjas -->
     <dialog id="modal_codeninjas" class="w-screen h-screen border rounded-lg shadow p-8">
       <div>
@@ -532,10 +498,9 @@
         <p class="py-4 font-semibold text-lg max-w-2xl">Cómo un grupo de amigos universitarios hoy permiten que miles de
           personas
           aprendan
-          de manera remota.</p>
-
+          de manera remota.
+        </p>
         <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-8 text-justify">
-
           <div class="md:col-start-1 md:col-end-2">
             <p class="mb-4 ">
               Codeninjas, la plataforma argentina de aprendizaje de programación, arrancó como un proyecto universitario
@@ -545,9 +510,7 @@
               forma
               en que los estudiantes se sumergen en el intrigante mundo de la programación.
             </p>
-
             <h3 class="my-4 text-2xl font-semibold  italic">¿Cómo nace CodeNinjas?</h3>
-
             <p class="my-4 italic font-semibold text-gray-600">"La idea de Codeninjas surgió de mi
               experiencia como estudiante de
               programación. Vi la
@@ -557,26 +520,24 @@
               desafíos
               técnicos y logísticos, pero sabíamos que si le poníamos garra podíamos sacar algo interesante."
             </p>
-
             <p class="my-4 ">Desde sus modestos inicios, Codeninjas ha experimentado una transformación
               significativa. Pasó de ofrecer material
               educativo a proporcionar cursos interactivos y mentorías en línea. Esta evolución les permitió no solo
               mantenerse al
               día con las demandas educativas cambiantes, sino también crear una comunidad vibrante de aprendices
               apasionados por la
-              programación.</p>
+              programación.
+            </p>
           </div>
-
           <div class="md:col-start-2 md:col-end-3">
             <!-- TODO imagen de codeninjas -->
             <img
               src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
               alt="" class="mb-4">
-
             <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cuál ha sido el mayor impacto de
               CodeNinjas
-              hasta ahora en la comunidad?</h3>
-
+              hasta ahora en la comunidad?
+            </h3>
             <p class="my-4 italic font-semibold text-gray-600">"El mayor impacto de Codeninjas radica en haber cambiado
               la narrativa del aprendizaje de programación. Empoderamos a
               miles de estudiantes, les damos las herramientas y el apoyo que necesitan para desarrollar conocimientos
@@ -585,11 +546,10 @@
               sobresalir. Buscamos que puedan manejarse solos y enfrentar los desafíos del mundo digital actual."
             </p>
           </div>
-
           <div class="md:col-start-3 md:col-end-3">
             <p class="mb-4">Sin embargo, sus inicios no fueron sencillos. Crear una plataforma educativa desde cero
-              requiere de un monumental esfuerzo. Es aquí donde entra <span class="tipografia">codeargent</span>.</p>
-
+              requiere de un monumental esfuerzo. Es aquí donde entra <span class="tipografia">codeargent</span>.
+            </p>
             <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo les ayudó <span
                 class="tipografia">codeargent</span> durante sus inicios?</h3>
             <p class="my-4 italic font-semibold text-gray-600">"<span class="tipografia">codeargent</span> nos
@@ -604,7 +564,6 @@
               educación."
             </p>
             <h3 class="my-4 text-2xl font-semibold italic text-left">¿Qué mensaje querés dejarle a la gente?</h3>
-
             <p class="my-4 italic font-semibold text-gray-600">"Al final del día, recomiendo a los jóvenes interesados
               en
               la tecnología que estudien lo que les apasiona. En este mundo
@@ -614,12 +573,10 @@
               ¡Adelante y
               mucho éxito a todos!"
             </p>
-
           </div>
         </div>
       </div>
     </dialog>
-
     <!-- Modal lafamiglia -->
     <dialog id="modal_lafamiglia" class="w-screen h-screen border rounded-lg shadow p-8">
       <div>
@@ -628,9 +585,7 @@
         </form>
         <h1 class="font-bold text-4xl pink-gradient-text py-1 italic">"Buon appetito!"</h1>
         <p class="py-4 font-semibold text-lg max-w-2xl">De Italia hacia el mundo con La Famiglia.</p>
-
         <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-8 text-justify">
-
           <div class="md:col-start-1 md:col-end-2">
             <p class="mb-4 ">
               En el epicentro de la fusión entre la tradición culinaria italiana y la vanguardia tecnológica, La
@@ -641,10 +596,9 @@
               italiana a
               través de una red global de restaurantes.
             </p>
-
             <h3 class="my-4 text-2xl font-semibold  italic">¿Cómo lograron modernizar y globalizar un pequeño
-              restaurante de familia?</h3>
-
+              restaurante de familia?
+            </h3>
             <p class="my-4 italic font-semibold text-gray-600">"La integración de tecnología fue clave. Desde el diseño
               de nuestra interfaz web de pedidos hasta la implementación de sistemas
               de IA para predecir los aumentos de demanda estacionales, utilizamos la tecnología para crear una
@@ -654,10 +608,7 @@
               también nos ha permitido
               conectar con clientes de todo el mundo. Jamás pensamos que íbamos a poder extendernos tanto."
             </p>
-
-
           </div>
-
           <div class="md:col-start-2 md:col-end-3">
             <!-- TODO imagen de la famiglia -->
             <img
@@ -668,10 +619,10 @@
               fusión de sabores tradicionales y herramientas tecnológicas de última generación, creando una experiencia
               única para
               nuestros comensales. Utilizando sistemas de análisis de sentimiento, es capaz de modificar los platillos
-              de sus comensales basados en sus visitas anteriores.</p>
+              de sus comensales basados en sus visitas anteriores.
+            </p>
             <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo les ha ayudado <span
                 class="tipografia">codeargent</span>?</h3>
-
             <p class="my-4 italic font-semibold text-gray-600">"La implementación del sistema ERP de CodeArgent ha sido
               revolucionaria. Nos ha proporcionado una plataforma centralizada
               para gestionar nuestras operaciones en todo el mundo. Desde el seguimiento de inventario hasta la
@@ -681,7 +632,6 @@
               mantener la calidad y la consistencia en cada rincón del mundo donde La Famiglia está presente."
             </p>
           </div>
-
           <div class="md:col-start-3 md:col-end-3">
             <p class="mb-4">En la era digital, la inteligencia artificial ha encontrado un aliado estratégico en la
               industria restaurantera. La
@@ -694,7 +644,8 @@
               adaptarse ágilmente a las cambiantes expectativas de sus comensales. La IA no solo se encarga de prever
               platos de moda,
               sino que también sirve como un puente innovador hacia la evolución continua en el mundo de la
-              restauración.</p>
+              restauración.
+            </p>
             <p class="mb-4">Esta sinergia entre la inteligencia artificial y la industria gastronómica va más allá de la
               simple anticipación de
               tendencias. Los algoritmos de aprendizaje automático analizan datos demográficos, historiales de pedidos y
@@ -703,9 +654,9 @@
               sugerir platos
               personalizados hasta ajustar dinámicamente los menús, la aplicación de IA permite una personalización sin
               precedentes,
-              elevando la experiencia gastronómica a un nivel totalmente nuevo.</p>
+              elevando la experiencia gastronómica a un nivel totalmente nuevo.
+            </p>
             <p class="mb-4">
-
               A medida que la tecnología continúa avanzando, los restaurantes están adoptando con entusiasmo estas
               soluciones
               inteligentes para mantenerse a la vanguardia de la competencia. La inteligencia artificial no solo impulsa
@@ -714,14 +665,12 @@
               anticipados. En este
               emocionante cruce entre gastronomía e innovación tecnológica, la aplicación de IA para la predicción de
               tendencias
-              redefine el arte de complacer a los paladares más exigentes.</p>
-
-
+              redefine el arte de complacer a los paladares más exigentes.
+            </p>
           </div>
         </div>
       </div>
     </dialog>
-
     <!-- Modal reshirt -->
     <dialog id="modal_reshirt" class="w-screen h-screen border rounded-lg shadow p-8">
       <div>
@@ -731,10 +680,9 @@
         <h1 class="font-bold text-4xl pink-gradient-text py-1">Combatiendo el trabajo infantil, una prenda a la vez.
         </h1>
         <p class="py-4 font-semibold text-lg max-w-2xl">re.SHIRT pelea contra la llamada <i>fast fashion</i> y sus
-          impliaciones éticas.</p>
-
+          impliaciones éticas.
+        </p>
         <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-8 text-justify">
-
           <div class="md:col-start-1 md:col-end-2">
             <p class="mb-4 ">
               En el horizonte de la moda ética, surge con fuerza <span class="font-bold">re.SHIRT</span>, una empresa
@@ -749,11 +697,10 @@
               justicia
               laboral. En esta entrevista, exploramos la visión y los métodos detrás de esta firma con su fundadora.
             </p>
-
             <h3 class="my-4 text-2xl font-semibold  italic">¿Cuál es la filosofía central de re.SHIRT en relación con la
               ética laboral y cómo implementan esta visión en su cadena de
-              suministro?</h3>
-
+              suministro?
+            </h3>
             <p class="my-4 italic font-semibold text-gray-600">"En <span class="font-bold">re.SHIRT</span>, consideramos
               que cada prenda cuenta una
               historia, y queremos que esa historia sea de ética y justicia. Nos
@@ -763,20 +710,17 @@
               de cada
               prenda, desde su creación hasta llegar a sus manos.
             </p>
-
           </div>
-
           <div class="md:col-start-2 md:col-end-3">
             <!-- TODO imagen de reshirt -->
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5KjaUW6SBLtN60JqmwX-nhQ4SzWs0H46mVrbKBS2uTSrZbKpeoS0Q7gVl-_lsUNsqQGM&usqp=CAU"
               alt="" class="mb-4 w-full">
-
             <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo han incorporado herramientas tecnológicas
               para combatir
               la explotación laboral y encontrar fuentes éticas de
-              materiales?</h3>
-
+              materiales?
+            </h3>
             <p class="my-4 italic font-semibold text-gray-600">La tecnología es nuestra aliada en la batalla contra la
               explotación laboral. Utilizamos herramientas avanzadas de
               inteligencia artificial para analizar patrones y tendencias, identificando posibles áreas de explotación
@@ -786,14 +730,11 @@
               asegurarnos de que cumplan con nuestros rigurosos estándares de sostenibilidad y ética.
             </p>
           </div>
-
           <div class="md:col-start-3 md:col-end-3">
-
             <h3 class="mb-4 text-2xl font-semibold italic text-left">¿Cómo les ayudó <span
                 class="tipografia">codeargent</span> a abrir sus puertas mediante
               e-commerce y cómo ha influido en su filosofía empresarial?
             </h3>
-
             <p class="my-4 italic font-semibold text-gray-600"><span class="tipografia">codeargent</span> fue
               fundamental en nuestra
               transición hacia el comercio electrónico. Nos proporcionó una plataforma sólida y
@@ -803,7 +744,6 @@
               tecnología, en manos
               éticas, puede ser una fuerza transformadora.
             </p>
-
             <p class="mb-4">La inteligencia artificial emerge como una herramienta esencial en la lucha contra la
               explotación laboral. Al
               analizar vastos conjuntos de datos, pueden identificarse patrones sospechosos y áreas de riesgo. La IA
@@ -815,19 +755,16 @@
               positiva de toda
               la industria textil.
             </p>
-
             <p class="mb-4"><span class="font-bold">re.SHIRT</span> no solo abraza la moda ética, sino que se posiciona
               como un faro de cambio en la industria. La combinación de
               una visión empresarial basada en la ética laboral con herramientas tecnológicas avanzadas no solo es
               posible, sino
               también esencial en la construcción de un futuro sostenible y justo para la moda.
             </p>
-
           </div>
         </div>
       </div>
     </dialog>
-
     <!-- Modal nuudddle -->
     <dialog id="modal_nuuddle" class="w-screen h-screen border rounded-lg shadow p-8">
       <div>
@@ -836,10 +773,9 @@
         </form>
         <h1 class="font-bold text-4xl pink-gradient-text py-1">El delivery de la Abuela</h1>
         <p class="py-4 font-semibold text-lg max-w-2xl">Cómo una abuela de 82 años comparte su amor por la cocina a
-          través de internet.</p>
-
+          través de internet.
+        </p>
         <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-8 text-justify">
-
           <div class="md:col-start-1 md:col-end-2">
             <p class="mb-4 ">
               En el corazón de la ciudad, Nuuddle destaca como un pequeño rincón gastronómico que trae consigo el
@@ -850,10 +786,9 @@
               familiares en cada
               bocado.
             </p>
-
             <h3 class="my-4 text-2xl font-semibold  italic">¿Cómo surgió la idea de crear Nuuddle y llevar la cocina
-              casera al mundo de la comida rápida?</h3>
-
+              casera al mundo de la comida rápida?
+            </h3>
             <p class="my-4 italic font-semibold text-gray-600">"La idea de Nuuddle nació de mi deseo de compartir el
               amor por la cocina casera con aquellos que tienen poco tiempo pero
               anhelan esa sazón tradicional. Quería que la gente disfrutara de platos familiares con la misma rapidez
@@ -861,17 +796,15 @@
               podrían obtener un bocado rápido, y así nació Nuuddle."
             </p>
           </div>
-
           <div class="md:col-start-2 md:col-end-3">
             <!-- TODO imagen de nuuddle -->
             <img
               src="https://www.thedailymeal.com/img/gallery/cooking-tips-hacks-and-tricks-your-grandma-knew/00_hed_iStock.jpg"
               alt="" class="mb-4">
-
             <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo ha sido la transición al comercio digital y
               cómo ha <span class="tipografia">codeargent</span> contribuido a esa
-              transformación?</h3>
-
+              transformación?
+            </h3>
             <p class="my-4 italic font-semibold text-gray-600">Al principio, estaba un poco insegura sobre entrar en el
               mundo del comercio digital. Fue entonces cuando conocí a
               <span class="tipografia">codeargent</span>, quienes hicieron que el
@@ -885,9 +818,7 @@
               operación.
             </p>
           </div>
-
           <div class="md:col-start-3 md:col-end-3">
-
             <p class="mb-4 italic font-semibold text-gray-600"> En el mundo moderno, las páginas de entrega han sido un
               cambio de juego para negocios como Nuuddle. Nos han permitido
               llegar a un público más amplio y aumentar nuestras ventas de manera significativa. Aunque al principio
@@ -903,21 +834,17 @@
             </p>
             <img src="https://civileats.com/wp-content/uploads/2018/03/180316-grandmas-cook-top1.jpg" alt=""
               class="mb-4">
-
           </div>
-
         </div>
       </div>
     </dialog>
-
     <div class="grid gap-4 grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 place-items-center my-10"
       id="contenedor">
-
       <!-- CODENINJAS -->
       <a onclick="modal_codeninjas.showModal()"
         class="
-        hover:cursor-pointer
-        flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+          hover:cursor-pointer
+          flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
         <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
           src="img/codeninjas.png" alt="">
         <div class="flex flex-col justify-between p-4 leading-normal">
@@ -928,13 +855,9 @@
             <span class="font-bold">CodeNinjas</span> representa una de las plataformas de educación de programación más
             completas de Argentina.
           </p>
-
           <span class="pink-gradient-text underline text-lg">Leer más</span>
-
         </div>
       </a>
-
-
       <!-- LA FAMIGLIA -->
       <a onclick="modal_lafamiglia.showModal()"
         class="hover:cursor-pointer flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
@@ -947,13 +870,11 @@
             globales.
           </p>
           <span class="pink-gradient-text underline text-lg">Leer más</span>
-
         </div>
       </a>
-
       <!-- RESHIRT -->
       <a onclick="modal_reshirt.showModal()""
-        class=" hover:cursor-pointer flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow
+          class=" hover:cursor-pointer flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow
         md:flex-row md:max-w-xl hover:bg-gray-100">
         <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
           src="img/reshirt.png" alt="">
@@ -964,12 +885,11 @@
             origen ético. <span class="tipografia">codeargent</span> soporta su página
             de
             e-commerce
-            internacional.</p>
+            internacional.
+          </p>
           <span class="pink-gradient-text underline text-lg">Leer más</span>
-
         </div>
       </a>
-
       <!-- NUUDLE -->
       <a onclick="modal_nuuddle.showModal()"
         class="hover:cursor-pointer flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
@@ -980,94 +900,51 @@
           <p class="mb-3 font-normal text-gray-700 "><span class="tipografia">codeargent</span>, ayuda
             a <span class="font-bold">Nuuddle</span>, un
             restaurante que lleva
-            el sabor casero a la comida rápida, a ofrecer servicios de pedidos por internet.</p>
+            el sabor casero a la comida rápida, a ofrecer servicios de pedidos por internet.
+          </p>
           <span class="pink-gradient-text underline text-lg">Leer más</span>
-
         </div>
       </a>
     </div>
-
   </div>
-
-
-  <!-- Contacto -->
-
-  <!-- <div class="mx-8 mb-10 p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8">
-    <h5 class="mb-2 text-3xl font-bold text-gray-900 blue-gradient-text">¿Tienes preguntas?</h5>
-    <p class="mb-5 text-base text-gray-500 sm:text-lg ">Si todavía tienes preguntas, puedes contactarnos por los
-      siguientes medios:</p>
-    <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-      <a href=""
-        class="w-full sm:w-auto dark-blue-gradient hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
-        <i class="fa-brands fa-whatsapp text-4xl mr-4"></i>
-        <div class="text-left rtl:text-right">
-          <div class="mb-1 text-xs">Envíanos un</div>
-          <div class="-mt-1 font-sans text-sm font-semibold">WhatsApp</div>
-        </div>
-      </a>
-      <a href=""
-        class="w-full sm:w-auto dark-blue-gradient hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
-        <i class="fa-regular fa-envelope text-4xl mr-4"></i>
-        <div class="text-left rtl:text-right">
-          <div class="mb-1 text-xs">Envíanos un</div>
-          <div class="-mt-1 font-sans text-sm font-semibold">Email</div>
-        </div>
-      </a>
-    </div>
-  </div> -->
-
-
   <!-- Sponsors -->
-
   <div class="mx-8 mb">
     <hr class="h-px my-8 bg-gray-200 border-0">
-
     <h1 class="text-4xl text-center font-bold blue-gradient-text">
       Conoce a nuestros sponsors
     </h1>
-
     <p class="mx-auto max-w-lg text-center mb-4 text-lg text-gray-600 my-4">Nuestros socios comparten nuestra misión de
       hacer la tecnología accesible para todos, eliminando barreras y
       abriendo
-      las puertas al mundo digital.</p>
-
+      las puertas al mundo digital.
+    </p>
     <div class="grid grid-cols-2 gap-4 md:grid-cols-4 my-4">
-
       <a href="https://.com" class="hover:underline">
         <div class="flex flex-col gap-4 items-center p-4">
           <img src="img/virtub2b.svg" class="w-[16rem]">
           <h2 class="pink-gradient-text uppercase text-lg font-bold">virtub2b</h2>
         </div>
       </a>
-
       <a href="https://.com" class="hover:underline">
         <div class="flex flex-col gap-4 items-center p-4">
           <img src="img/concero.svg" class="w-[16rem]">
           <h2 class="pink-gradient-text uppercase text-lg font-bold">concero</h2>
         </div>
       </a>
-
       <a href="https://.com" class="hover:underline">
         <div class="flex flex-col gap-4 items-center p-4">
           <img src="img/enploy.svg" class="w-[16rem]">
           <h2 class="pink-gradient-text uppercase text-lg font-bold">enploy</h2>
         </div>
       </a>
-
       <a href="https://.com" class="hover:underline">
         <div class="flex flex-col gap-4 items-center p-4">
           <img src="img/envo.svg" class="w-[16rem]">
           <h2 class="pink-gradient-text uppercase text-lg font-bold">envo</h2>
         </div>
       </a>
-
-
     </div>
-
   </div>
-
-
-
   <!-- Boton subir -->
   <button type="button"
     class="!fixed bottom-5 right-5 hidden rounded-full pink-gradient p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
@@ -1079,8 +956,6 @@
       </path>
     </svg>
   </button>
-
-
   <!-- Footer -->
   <footer class="blue-gradient rounded-t-lg shadow">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -1106,11 +981,266 @@
         Codeargent S.R.L. Todos los derechos reservados.</span>
     </div>
   </footer>
+  <!-- Banner eventos -->
+  <div id="bottom-banner" tabindex="-1"
+    class="fixed bottom-0 start-0 z-50 flex justify-between w-full p-4 border-t border-gray-200 bg-gray-50">
+    <div class="flex items-center mx-auto">
+      <p class="flex items-center text-sm font-normal text-black ">
+        <span class="inline-flex p-1 me-3 bg-gray-200 rounded-full  w-6 h-6 items-center justify-center">
+          <i class="fa-regular fa-calendar-days text-gray-800"></i>
+        </span>
+        <span>Estamos organizando nuestor primer evento. <a onclick="modal_eventos.showModal()"
+            class="flex items-center ms-0 text-sm font-medium blue-gradient-text md:ms-1 md:inline-flex cursor-pointer hover:underline">Conocer
+            más ></a>
+        </span>
+      </p>
+    </div>
+    <div class="flex items-center">
+      <button data-dismiss-target="#bottom-banner" type="button"
+        class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5">
+        <i class="fa-solid fa-xmark text-2xl"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Modal eventos -->
+  <dialog id="modal_eventos" class="w-screen h-screen border rounded-lg shadow p-8">
+    <div>
+      <form method="dialog">
+        <button class="absolute right-4 top-3 text-3xl"><i class="fa-solid fa-xmark"></i></button>
+      </form>
+
+      <div class="flex flex-col md:flex-row w-full align-center md:justify-items-start gap-8">
+
+        <div class="p-4 h-full md:grow-[2]">
+          <h1 class="font-bold text-3xl pink-gradient-text py-1">ConvenCode, un evento de CodeArgent</h1>
+          <p class="py-4 font-semibold text-lg max-w-2xl">¡Te invitamos a unirte a nosotros para una semana llena de
+            conocimiento, innovación y colaboración en el mundo del desarrollo de
+            software! Te invitamos a participar en nuestro evento exclusivo que se
+            llevará a cabo en el Centro de Convenciones de Buenos Aires.</p>
+          <p class="py-4 text-lg max-w-2xl">Descubre las últimas tendencias en inteligencia artificial, emprendimientos
+            tecnológicos, desarrollo de software
+            sostenible y más. Escucha a expertos líderes del sector compartir sus conocimientos, experiencias y visión
+            del futuro de
+            la tecnología en la Argentina.</p>
+          <p class="py-4 text-lg max-w-2xl">Este evento es una oportunidad única para conectarte con profesionales
+            apasionados, empresarios visionarios y expertos
+            en tecnología. ¡Esperamos verte ahí mientras exploramos juntos el emocionante universo del desarrollo de
+            software en el
+            corazón de Buenos Aires!</p>
+          <!-- TODO: imagen modal convencion -->
+          <img
+            src="https://api-static.eventsip.com/portals/files/50643/fit/1920x1080/eventsip-mice-latam-centro-de-convenciones-de-buenos-aires.jpg"
+            alt="" srcset="">
+
+        </div>
+
+        <div class="mx-auto md:grow-[3] max-w-[60%] flex flex-col gap-8">
+          <ol class="items-center flex flex-col md:flex-row flex-wrap gap-8">
+            <!-- Charla 1 -->
+            <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                <div
+                  class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white  sm:ring-8  shrink-0">
+                  <i class="fa-regular fa-calendar-days text-gray-800"></i>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                <h3 class="text-lg font-semibold text-gray-900">Innovación Tecnológica en la Industria Argentina</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">15 de marzo de 2024</time>
+                <p class="text-base font-normal text-gray-500 ">
+                  Únete a la Dra. Ana López en una exploración profunda sobre la evolución de la tecnología y la
+                  innovación en la
+                  industria argentina. Descubre casos de éxito y oportunidades emergentes que están dando forma al
+                  futuro
+                  tecnológico del país.
+                </p>
+              </div>
+            </li>
+
+            <!-- Charla 2 -->
+            <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                <div
+                  class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white  sm:ring-8  shrink-0">
+                  <i class="fa-regular fa-calendar-days text-gray-800"></i>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                <h3 class="text-lg font-semibold text-gray-900">Inteligencia Artificial: Transformando Empresas y
+                  Sociedad</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">15 de marzo de 2024</time>
+                <p class="text-base font-normal text-gray-500 ">
+                  Únete al Ing. Martín González en un análisis profundo sobre el impacto de la inteligencia artificial
+                  en diversos
+                  sectores industriales y su papel en la configuración del futuro empresarial en Argentina.
+                </p>
+              </div>
+            </li>
+
+            <!-- Charla 3 -->
+            <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                <div
+                  class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white  sm:ring-8  shrink-0">
+                  <i class="fa-regular fa-calendar-days text-gray-800"></i>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                <h3 class="text-lg font-semibold text-gray-900">Desarrollo de Software Sostenible: Retos y Oportunidades
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">16 de marzo de 2024</time>
+                <p class="text-base font-normal text-gray-500 ">
+                  Únete a la Lic. Carla Fernández en una exploración de prácticas sostenibles en el desarrollo de
+                  software y cómo
+                  las empresas argentinas pueden adoptar enfoques más éticos y responsables.
+                </p>
+              </div>
+            </li>
+
+            <!-- Charla 4 -->
+            <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                <div
+                  class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white  sm:ring-8  shrink-0">
+                  <i class="fa-regular fa-calendar-days text-gray-800"></i>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                <h3 class="text-lg font-semibold text-gray-900">Emprendimientos Tecnológicos: Experiencias y Lecciones
+                  Aprendidas
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">17 de marzo de 2024</time>
+                <p class="text-base font-normal text-gray-500 ">
+                  Únete al Dr. Pablo Gómez en historias inspiradoras de emprendedores argentinos en el mundo
+                  tecnológico,
+                  compartiendo desafíos, éxitos y valiosas lecciones.
+                </p>
+              </div>
+            </li>
+
+            <!-- Charla 5 -->
+            <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                <div
+                  class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white  sm:ring-8  shrink-0">
+                  <i class="fa-regular fa-calendar-days text-gray-800"></i>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                <h3 class="text-lg font-semibold text-gray-900">El Futuro de la Programación: Tendencias y Herramientas
+                  Emergentes
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">17 de marzo de 2024</time>
+                <p class="text-base font-normal text-gray-500 ">
+                  Únete al Ing. Julia Ramírez en un vistazo a las tendencias actuales y futuras en el mundo de la
+                  programación,
+                  destacando las herramientas y lenguajes de programación más relevantes.
+                </p>
+              </div>
+            </li>
+
+            <!-- Charla 6 -->
+            <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                <div
+                  class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white  sm:ring-8  shrink-0">
+                  <i class="fa-regular fa-calendar-days text-gray-800"></i>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                <h3 class="text-lg font-semibold text-gray-900">IA y Ética: Navegando por el Desarrollo Responsable</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">18 de marzo de 2024</time>
+                <p class="text-base font-normal text-gray-500 ">
+                  Únete a la Dra. Javier López en una discusión sobre los desafíos éticos asociados con la inteligencia
+                  artificial y
+                  cómo los desarrolladores pueden abordarlos de manera responsable.
+                </p>
+              </div>
+            </li>
+
+            <!-- Charla 7 -->
+            <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                <div
+                  class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white  sm:ring-8  shrink-0">
+                  <i class="fa-regular fa-calendar-days text-gray-800"></i>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                <h3 class="text-lg font-semibold text-gray-900">Transformación Digital en la Educación: Impacto en el
+                  Desarrollo de
+                  Talento</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">19 de marzo de 2024</time>
+                <p class="text-base font-normal text-gray-500 ">
+                  Únete a la Lic. María Rodríguez en cómo la transformación digital está influyendo en la educación en
+                  Argentina y
+                  su repercusión en la formación de profesionales en el desarrollo de software.
+                </p>
+              </div>
+            </li>
+
+            <!-- Charla 8 -->
+            <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                <div
+                  class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white  sm:ring-8  shrink-0">
+                  <i class="fa-regular fa-calendar-days text-gray-800"></i>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                <h3 class="text-lg font-semibold text-gray-900">La Industria del Conocimiento: Claves para su Desarrollo
+                  Sostenible
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">19 de marzo de 2024</time>
+                <p class="text-base font-normal text-gray-500 ">
+                  Únete al Dr. Guillermo Sánchez en un análisis detallado de la importancia de la industria del
+                  conocimiento en
+                  Argentina y las estrategias para su desarrollo sostenible.
+                </p>
+              </div>
+            </li>
+
+            <!-- Charla 9 -->
+            <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                <div
+                  class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white  sm:ring-8  shrink-0">
+                  <i class="fa-regular fa-calendar-days text-gray-800"></i>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                <h3 class="text-lg font-semibold text-gray-900">Innovación Colaborativa: Proyectos que Están
+                  Transformando la
+                  Industria</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">20 de marzo de 2024</time>
+                <p class="text-base font-normal text-gray-500 ">
+                  Únete a la Ing. Carolina Mendoza en una presentación de proyectos colaborativos en la industria
+                  argentina que
+                  están liderando la innovación y generando un impacto positivo en el desarrollo de software.
+                </p>
+              </div>
+            </li>
+
+
+          </ol>
+        </div>
+
+      </div>
 
 
 
+    </div>
+  </dialog>
 </body>
-
 <script src="index.js"></script>
 <script src="scroll.js"></script>
 
