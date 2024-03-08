@@ -38,9 +38,12 @@
         .dark-blue-gradient {
           @apply bg-gradient-to-r from-indigo-600 to-violet-600
         }
+
+        .tipografia {
+          @apply pink-gradient-text font-semibold capitalize
+        }
       }
   </style>
-  <!-- #TODO Nombre de la compañia -->
   <title>Programamos tu realidad | CODEARGENT s.r.l</title>
 </head>
 
@@ -48,7 +51,6 @@
   <!-- navbar -->
   <nav class="py-2 px-6 w-full h-20 flex justify-between items-center text-white absolute">
     <!--Logo-->
-    <!-- #TODO Nombre de la compañia -->
     <div class="font-bold text-3xl">
       <a href="#hero" class="pink-gradient-text text-4xl uppercase">
         codeargent
@@ -105,8 +107,7 @@
       <div class="text-white mt-[2rem] sm:mt-[4rem] sm:w-2/3">
         <h1 class="font-bold text-[2rem] md:text-[2rem] lg:text-[3rem] mb-2 md:mb-6">
           Tú das la idea, nosotros hacemos el resto</h1>
-        <p class="text-lg mr-8 md:mr-auto sm:text-2xl">Con <span
-            class="pink-gradient-text font-semibold capitalize">codeargent</span>,
+        <p class="text-lg mr-8 md:mr-auto sm:text-2xl">Con <span class="tipografia">codeargent</span>,
           cualquier
           persona puede
           llevar sus ideas hacia la realidad. Sin
@@ -115,7 +116,6 @@
         </p>
       </div>
       <!-- Imagen del hero -->
-      <!-- #TODO imagen -->
       <img class="hidden md:block w-full ml-[-3.5rem] max-w-4xl" src="img/imagenhero.svg">
     </div>
   </div>
@@ -288,11 +288,13 @@
     </div>
   </div>
 
+
   <!-- Clientes -->
 
   <div class="mx-8" id="clientes">
     <hr class="h-px my-8 bg-gray-200 border-0">
-    <h1 class="text-4xl text-center font-bold blue-gradient-text" id="opiniones">
+
+    <h1 class="mt-8 text-4xl text-center font-bold blue-gradient-text" id="opiniones">
       Opiniones De Nuestros Clientes</h1>
     <p class="mx-auto max-w-lg text-center my-4 text-lg text-gray-600 ">
       Conoce las opiniones de algunos clientes recientes.
@@ -384,9 +386,133 @@
   </div>
 
 
+  <!-- CEO -->
+  <dialog id="modal_ceo" class="w-screen h-screen border rounded-lg shadow p-8">
+    <div>
+      <form method="dialog">
+        <button class="absolute right-4 top-3 text-3xl"><i class="fa-solid fa-xmark"></i></button>
+      </form>
+      <h1 class="font-bold text-4xl pink-gradient-text py-1">CODEARGENT, por el futuro tecnológico argentino.</h1>
+      <p class="py-4 font-semibold text-lg max-w-2xl">Nuestro CEO cuenta cómo <span class="tipografia">codeargent</span>
+        no sólo trabaja desarrollando software,
+        sino también trabaja para desarrollar la industria del software nacional.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-8 text-justify">
+
+        <div class="md:col-start-1 md:col-end-2">
+          <p class="mb-4 ">
+            En <span class="tipografia">codeargent</span>, entendemos que el verdadero
+            impacto surge de la colaboración y el fortalecimiento del ecosistema
+            tecnológico. Trabajamos en estrecha asociación con otras empresas, instituciones académicas y startups para
+            crear
+            sinergias que impulsen la innovación y la investigación. Esta colaboración no solo enriquece nuestro propio
+            conocimiento, sino que también contribuye a la creación de un entorno más robusto para el desarrollo
+            tecnológico en
+            Argentina.
+          </p>
+
+          <h3 class="my-4 text-2xl font-semibold  italic">¿Cómo contribuímos a esta visión y promovemos la creación de
+            empleo en la industria del conocimiento?</h3>
+
+          <p class="my-4 italic font-semibold text-gray-600">"No solo ofrecemos soluciones tecnológicas avanzadas, sino
+            que también apostamos por el talento local. Al contratar y
+            capacitar a profesionales argentinos altamente calificados, contribuimos al crecimiento del sector y
+            fomentamos un
+            ecosistema laboral dinámico. Además, al trabajar con diversas empresas, desde pequeñas startups hasta
+            grandes
+            corporaciones, estamos impactando positivamente en distintos segmentos de la economía."
+          </p>
+
+          <p class="my-4 ">Estamos convenicidos que la Argentina tiene un potencial inmenso en el ámbito del desarrollo
+            de software y la inteligencia artificial. La
+            inversión en estas áreas no solo impulsará la economía, sino que también permitirá a las empresas argentinas
+            competir a
+            nivel global, generando empleo y posicionando al país como un referente en el campo del conocimiento y la
+            tecnología.</p>
+        </div>
+
+        <div class="md:col-start-2 md:col-end-3">
+          <!-- TODO imagen de codeninjas -->
+          <img
+            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
+            alt="" class="mb-4">
+
+          <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo ves el papel de la tecnología y la inteligencia
+            artificial en la generación de trabajo en Argentina</h3>
+
+          <p class="my-4 italic font-semibold text-gray-600">"La tecnología y la inteligencia artificial son motores
+            fundamentales para la generación de empleo en Argentina y en todo
+            el mundo. Al invertir en la industria del conocimiento, podemos crear oportunidades laborales en el
+            desarrollo de
+            software, análisis de datos, inteligencia artificial y otras áreas especializadas. La adaptabilidad y el
+            enfoque
+            innovador de Argentina pueden convertirse en un activo estratégico para impulsar la economía a través de la
+            creación de
+            empleo en sectores de alta tecnología."
+          </p>
+        </div>
+        <div class="md:col-start-3 md:col-end-3">
+          <p class="mb-4">Además de nuestro compromiso con la generación de empleo, en <span
+              class="tipografia">codeargent</span> nos esforzamos por
+            tener un impacto social
+            positivo. A través de iniciativas de responsabilidad empresarial, participamos en programas de educación
+            tecnológica
+            para comunidades desfavorecidas y apoyamos proyectos que buscan cerrar la brecha digital. Creemos firmemente
+            que el
+            éxito de una empresa está intrínsecamente ligado al bienestar de la sociedad en la que opera.</p>
+
+          <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo ves el futuro de la industria del conocimiento
+            en Argentina y cuál crees que debería ser el enfoque para maximizar su
+            impacto en la generación de empleo?</h3>
+          <p class="my-4 italic font-semibold text-gray-600">"El futuro de la industria del conocimiento en Argentina es
+            prometedor. Es esencial seguir invirtiendo en educación,
+            formación técnica y en la creación de políticas que fomenten la innovación y el emprendimiento. Además, la
+            colaboración
+            entre el sector privado, el gobierno y las instituciones académicas es clave para impulsar iniciativas
+            conjuntas que
+            impulsen la industria y generen empleo de calidad."
+          </p>
+          <p class="my-4">En resumen, la Argentina tiene la oportunidad de liderar el camino en el desarrollo de
+            software y la inteligencia
+            artificial. <span class="tipografia">codeargent</span> está comprometido
+            con este camino, trabajando no solo para ofrecer soluciones tecnológicas de
+            vanguardia, sino también para ser un catalizador en la creación de empleo y el desarrollo de talento local.
+            La inversión
+            estratégica en la industria del conocimiento allana el camino hacia un futuro próspero y sostenible para
+            nuestro país.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="" id="ceo">
+    <!-- TODO imagen jumbotron -->
+    <section
+      class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+          Invertimos en el potencial argentino</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">No solo ofrecemos servicios de
+          desarrollo, también estamos comprometidos en impulsar
+          la
+          innovación y el crecimiento de la industria del conocimiento nacional.
+        </p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+          <a onclick="modal_ceo.showModal()"
+            class="hover:cursor-pointer inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+            Te contamos cómo
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
   <!-- Casos de estudio -->
-  <div class="mx-8" id="proyectos">
-    <hr class="h-px my-8 bg-gray-200 border-0">
+  <div class="m-8" id="proyectos">
 
     <h1 class="text-4xl text-center font-bold blue-gradient-text" id="proyectos">
       Desarrollo Hacia El Futuro</h1>
@@ -462,13 +588,12 @@
 
           <div class="md:col-start-3 md:col-end-3">
             <p class="mb-4">Sin embargo, sus inicios no fueron sencillos. Crear una plataforma educativa desde cero
-              requiere de un monumental esfuerzo. Es aquí donde entra <span
-                class="pink-gradient-text font-semibold capitalize">codeargent</span>.</p>
+              requiere de un monumental esfuerzo. Es aquí donde entra <span class="tipografia">codeargent</span>.</p>
 
             <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo les ayudó <span
-                class="pink-gradient-text font-semibold capitalize">codeargent</span> durante sus inicios?</h3>
-            <p class="my-4 italic font-semibold text-gray-600">"<span
-                class="pink-gradient-text font-semibold capitalize">codeargent</span> nos simplificó enormemente la
+                class="tipografia">codeargent</span> durante sus inicios?</h3>
+            <p class="my-4 italic font-semibold text-gray-600">"<span class="tipografia">codeargent</span> nos
+              simplificó enormemente la
               gestión de la
               plataforma. Su equipo creó interfaces fáciles de usar y nos proporcionó las herramientas
               nos han permitido concentrarnos en ofrecer contenido de calidad y brindar apoyo a nuestros
@@ -545,7 +670,7 @@
               nuestros comensales. Utilizando sistemas de análisis de sentimiento, es capaz de modificar los platillos
               de sus comensales basados en sus visitas anteriores.</p>
             <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo les ha ayudado <span
-                class="pink-gradient-text font-semibold capitalize">codeargent</span>?</h3>
+                class="tipografia">codeargent</span>?</h3>
 
             <p class="my-4 italic font-semibold text-gray-600">"La implementación del sistema ERP de CodeArgent ha sido
               revolucionaria. Nos ha proporcionado una plataforma centralizada
@@ -665,12 +790,12 @@
           <div class="md:col-start-3 md:col-end-3">
 
             <h3 class="mb-4 text-2xl font-semibold italic text-left">¿Cómo les ayudó <span
-                class="pink-gradient-text font-semibold capitalize">codeargent</span> a abrir sus puertas mediante
+                class="tipografia">codeargent</span> a abrir sus puertas mediante
               e-commerce y cómo ha influido en su filosofía empresarial?
             </h3>
 
-            <p class="my-4 italic font-semibold text-gray-600"><span
-                class="pink-gradient-text font-semibold capitalize">codeargent</span> fue fundamental en nuestra
+            <p class="my-4 italic font-semibold text-gray-600"><span class="tipografia">codeargent</span> fue
+              fundamental en nuestra
               transición hacia el comercio electrónico. Nos proporcionó una plataforma sólida y
               segura, permitiéndonos llegar a un público más amplio y compartir nuestra visión con el mundo. Además, su
               sistema ERP ha
@@ -744,16 +869,16 @@
               alt="" class="mb-4">
 
             <h3 class="my-4 text-2xl font-semibold italic text-left">¿Cómo ha sido la transición al comercio digital y
-              cómo ha <span class="pink-gradient-text font-semibold capitalize">codeargent</span> contribuido a esa
+              cómo ha <span class="tipografia">codeargent</span> contribuido a esa
               transformación?</h3>
 
             <p class="my-4 italic font-semibold text-gray-600">Al principio, estaba un poco insegura sobre entrar en el
               mundo del comercio digital. Fue entonces cuando conocí a
-              <span class="pink-gradient-text font-semibold capitalize">codeargent</span>, quienes hicieron que el
+              <span class="tipografia">codeargent</span>, quienes hicieron que el
               proceso fuera increíblemente accesible. Gracias a su trabajo, hoy en
               día la mayoría
-              de nuestros ingresos provienen de pedidos digitales. <span
-                class="pink-gradient-text font-semibold capitalize">codeargent</span> no solo nos ayudó a crear una
+              de nuestros ingresos provienen de pedidos digitales. <span class="tipografia">codeargent</span> no solo
+              nos ayudó a crear una
               presencia en
               línea, sino
               que también optimizaron nuestro sitio web para facilitar las órdenes en línea y agilizar nuestra
@@ -771,7 +896,7 @@
               de nuestras
               recetas, sino también llevar ese toque casero a hogares que de otra manera no podríamos alcanzar. La
               tecnología, en
-              manos hábiles como las de <span class="pink-gradient-text font-semibold capitalize">codeargent</span>, ha
+              manos hábiles como las de <span class="tipografia">codeargent</span>, ha
               sido la clave para mantener viva la esencia hogareña de Nuuddle
               en la era
               digital.
@@ -799,7 +924,7 @@
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Educación IT libre y gratuita</h5>
           <p class="mb-3 font-normal text-gray-700 ">
             Gracias
-            a <span class="pink-gradient-text font-semibold capitalize">codeargent</span>,
+            a <span class="tipografia">codeargent</span>,
             <span class="font-bold">CodeNinjas</span> representa una de las plataformas de educación de programación más
             completas de Argentina.
           </p>
@@ -817,8 +942,7 @@
           src="img/lafamiglia.png" alt="">
         <div class="flex flex-col justify-between p-4 leading-normal">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Desde Italia hacia el mundo</h5>
-          <p class="mb-3 font-normal text-gray-700 ">Con <span
-              class="pink-gradient-text font-semibold capitalize">codeargent</span>,
+          <p class="mb-3 font-normal text-gray-700 ">Con <span class="tipografia">codeargent</span>,
             <span class="font-bold">La Famiglia</span> es capaz de llevar comida de calidad en sus 18 sucursales
             globales.
           </p>
@@ -837,7 +961,7 @@
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Remeras éticas</h5>
           <p class="mb-3 font-normal text-gray-700 "><span class="font-bold">re.SHIRT</span> comercializa ropa
             fabricada con materiales de
-            origen ético. <span class="pink-gradient-text font-semibold capitalize">codeargent</span> soporta su página
+            origen ético. <span class="tipografia">codeargent</span> soporta su página
             de
             e-commerce
             internacional.</p>
@@ -853,8 +977,7 @@
           src="img/nuuddle.png" alt="">
         <div class="flex flex-col justify-between p-4 leading-normal">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Cocina como en casa, para llevar</h5>
-          <p class="mb-3 font-normal text-gray-700 "><span
-              class="pink-gradient-text font-semibold capitalize">codeargent</span>, ayuda
+          <p class="mb-3 font-normal text-gray-700 "><span class="tipografia">codeargent</span>, ayuda
             a <span class="font-bold">Nuuddle</span>, un
             restaurante que lleva
             el sabor casero a la comida rápida, a ofrecer servicios de pedidos por internet.</p>
