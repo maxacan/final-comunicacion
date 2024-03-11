@@ -456,7 +456,8 @@
   <!-- Jumbotron CEO -->
   <div class="" id="ceo">
     <!-- TODO imagen jumbotron, capaz la imagen de un tipo hablando o algo -->
-    <section class="bg-center bg-cover bg-[url('http://www.canal-ar.com.ar/noticias/images/c_ceria_160418_r.jpg')] bg-gray-700 bg-blend-multiply">
+    <section
+      class="bg-center bg-cover bg-[url('http://www.canal-ar.com.ar/noticias/images/c_ceria_160418_r.jpg')] bg-gray-700 bg-blend-multiply">
       <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
           Invertimos en el potencial argentino
@@ -982,7 +983,7 @@
       </p>
     </div>
     <div class="flex items-center">
-      <button data-dismiss-target="#bottom-banner" type="button"
+      <button onclick="getElementById('bottom-banner').classList.add('hidden')" type="button"
         class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5">
         <i class="fa-solid fa-xmark text-2xl"></i>
       </button>
